@@ -14,6 +14,13 @@ try:
     print(f"Division of {num_1} and {num_2} is {div}")
   
 except Exception as e:
-    print("Error Traceback:",e.__traceback__.tb_lineno)
-    print("Error Type: ",type(e).__name__)
-    print("Error Message: ",e)
+    print("Something went wrong! Please try again")
+
+    error_message = "\n--------------------------------------------------------"
+    error_message += "\nError Traceback: "+ str(e.__traceback__.tb_lineno)
+    error_message += "\nError Type: "+ type(e).__name__
+    error_message += "\nError Message: "+ str(e)
+    error_message += "\n--------------------------------------------------------"
+    file = open("log.txt","a")
+    file.write(error_message)
+    

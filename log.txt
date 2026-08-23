@@ -1,0 +1,6 @@
+
+--------------------------------------------------------
+Error Traceback: 11
+Error Type: ValueError
+Error Message: value of num 2 should not be zero
+--------------------------------------------------------
